@@ -289,31 +289,27 @@
 <p>3.注释 注释有两种</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//单行注释</span></div><div class="line"></div><div class="line"><span class="comment">/*多行注释*/</span></div></pre></td></tr></table></figure>
 <p>4.严格模式</p>
-<pre><code>引入严格模式 使JavaScript 不安全的操作会报错 不确定的行为得到处理
-启用严格模式，在顶部添加代码
-</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span>;</div></pre></td></tr></table></figure>
+<p>引入严格模式 使JavaScript 不安全的操作会报错 不确定的行为得到处理启用严格模式，在顶部添加代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span>;</div></pre></td></tr></table></figure>
 <p>5.标识符</p>
-<pre><code>变量名、常量名、函数名、函数参数名、对象属性名的统称
-
-标识符的命名规则
-
--由数字、字母、下划线(\_)和美元符($)组成
-
--首字符不能使数字
-
--不能使用JavaScript关键字和保留字
-
--标识符的名字可以是任意长度
-
--标识符采用驼峰大小写格式: 第一个单词全小写 剩下的每个单词的首字母大写
-
+<p>变量名、常量名、函数名、函数参数名、对象属性名的统称</p>
+<p>标识符的命名规则</p>
+<ul>
+<li><p>由数字、字母、下划线(_)和美元符($)组成</p>
+</li>
+<li><p>首字符不能使数字</p>
+</li>
+<li><p>不能使用JavaScript关键字和保留字</p>
+</li>
+<li><p>标识符的名字可以是任意长度</p>
+</li>
+<li><p>标识符采用驼峰大小写格式: 第一个单词全小写 剩下的每个单词的首字母大写</p>
+</li>
+</ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myFirstCar;</div><div class="line"><span class="keyword">var</span> nothingToDo;</div></pre></td></tr></table></figure>
-
-关键字 
-
-关键字可用于表示控制语句的开始或结束，或者用于执行特定操作按照规定
-关键字不能用作标识符。以下是JavaScript全部关键字
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">| break    | do       | instanceof | typeof |</div><div class="line">| case     | else     | new        | var    |</div><div class="line">| catch    | finally  | return     | void   |</div><div class="line">| continue | for      | switch     | while  |</div><div class="line">| debugger | function | this       | with   |</div><div class="line">| defalut  | if       | throw      | delete |</div><div class="line">| in       | try      |            |        |</div></pre></td></tr></table></figure>
+<p>关键字 </p>
+<p>关键字可用于表示控制语句的开始或结束，或者用于执行特定操作按照规定<br>关键字不能用作标识符。以下是JavaScript全部关键字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">| break    | do       | instanceof | typeof |</div><div class="line">| case     | else     | new        | var    |</div><div class="line">| catch    | finally  | return     | void   |</div><div class="line">| continue | for      | switch     | while  |</div><div class="line">| debugger | function | this       | with   |</div><div class="line">| defalut  | if       | throw      | delete |</div><div class="line">| in       | try      |            |        |</div></pre></td></tr></table></figure>
 <p>严格模式下  关键字</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">| class | enum   | extends | super |</div><div class="line">| const | export | import  |       |</div></pre></td></tr></table></figure>
 <p>保留字</p>
@@ -322,26 +318,28 @@
 <p>严格模式下 保留字</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">| implements | package | public | interface |</div><div class="line">| private    | static  | let    | protected |</div><div class="line">| yield      |         |        |           |</div></pre></td></tr></table></figure>
 <p>6.变量</p>
-<p>-变量是标识符的一种，用来存储数据</p>
+<ul>
+<li>变量是标识符的一种，用来存储数据</li>
+</ul>
 <p>ECMAScript的变量是松散类型.可以保存任何类型的数据，</p>
 <p>每个变量仅仅是一个用于保存值的占位符</p>
 <ul>
-<li><p>声明变量</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="string">"hello world"</span>; <span class="comment">// a就是一个变量</span></div></pre></td></tr></table></figure>
-</li>
+<li>声明变量</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="string">"hello world"</span>; <span class="comment">// a就是一个变量</span></div></pre></td></tr></table></figure>
 <p><strong>如果局部变量中不加var 会变成全局变量 严格模式下会报错</strong></p>
 <ul>
-<li><p>如果声明一个变量，没有初始化那么默认值是: undefined(未定义);</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">var</span> a; <span class="comment">//声明了一个变量，这个变量名叫a，a存储的值为undefined</span></div><div class="line">alert(a);</div></pre></td></tr></table></figure>
-</li>
-<li><p>赋值运算符”=”,不代表数学中等于 而是将 等号右侧的数据给了等号左侧</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> b=<span class="number">1</span>; <span class="comment">//声明了一个变量，命名为b并且初始化了一个数据是数字1</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>同时声明多个变量</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> b=<span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> c=<span class="number">3</span>;</div></pre></td></tr></table></figure>
-</li>
+<li>如果声明一个变量，没有初始化那么默认值是: undefined(未定义);</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">var</span> a; <span class="comment">//声明了一个变量，这个变量名叫a，a存储的值为undefined</span></div><div class="line">alert(a);</div></pre></td></tr></table></figure>
+<ul>
+<li>赋值运算符”=”,不代表数学中等于 而是将 等号右侧的数据给了等号左侧</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> b=<span class="number">1</span>; <span class="comment">//声明了一个变量，命名为b并且初始化了一个数据是数字1</span></div></pre></td></tr></table></figure>
+<ul>
+<li>同时声明多个变量</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> b=<span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> c=<span class="number">3</span>;</div></pre></td></tr></table></figure>
 <p>等价于</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>;</div></pre></td></tr></table></figure>
 <p>7.代码测试: <code>console.log()</code></p>
@@ -356,7 +354,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/23/1-初始JavaScript/" data-id="cj95bcsdj0000no7kd308s8ih" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/23/1-初始JavaScript/" data-id="cj95blrnz0000ro7kz204nz6j" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -490,7 +488,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/22/hello/" data-id="cj95bcsdv0005no7kbvgmjwks" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/22/hello/" data-id="cj95blro80005ro7kzy9vuelt" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -618,7 +616,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/22/hello-world/" data-id="cj95bcsdr0002no7k93ulpem6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/22/hello-world/" data-id="cj95blro40002ro7kvd5p27s9" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
