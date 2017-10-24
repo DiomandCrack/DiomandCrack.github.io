@@ -157,7 +157,7 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                3
+                4
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -210,21 +210,190 @@
 
             
             <section id="main">
+    <article id="post-2-数据类型" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="2017/10/24/2-数据类型/">2.数据类型</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="2017/10/24/2-数据类型/">
+            <time datetime="2017-10-24T14:38:55.000Z" itemprop="datePublished">2017-10-24</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="categories/笔记/">笔记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="categories/笔记/JavaScirpt学习笔记/">JavaScirpt学习笔记</a>
+    </div>
+
+                                                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="tags/js笔记/">js笔记</a>
+    </div>
+
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+
+                                    
+                                            
+                                                    <h1 id="操作符与数据类型"><a href="#操作符与数据类型" class="headerlink" title="操作符与数据类型"></a>操作符与数据类型</h1><h2 id="检测数据类型-typeof-操作符"><a href="#检测数据类型-typeof-操作符" class="headerlink" title="检测数据类型-typeof 操作符"></a>检测数据类型-typeof 操作符</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> awesome = <span class="string">"被自己帅醒"</span>;</div><div class="line"><span class="keyword">typeof</span> awesome <span class="comment">//"string"</span></div></pre></td></tr></table></figure>
+<p><strong>typeof 输出的格式是字符串</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</div><div class="line"><span class="keyword">typeof</span> a; <span class="comment">//"number"</span></div><div class="line"><span class="keyword">var</span> b=ture;</div><div class="line"><span class="keyword">typeof</span> b; <span class="comment">//“boolean”</span></div></pre></td></tr></table></figure>
+<p>typeof 可以返回的值有</p>
+<ul>
+<li>“undefined”</li>
+<li>“boolean”</li>
+<li>“string”</li>
+<li>“number”</li>
+<li>“object” 这有个bug null属于Null数据类型 但是用typeof测出来是object</li>
+<li>“function”</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> what = <span class="literal">null</span></div><div class="line"><span class="keyword">typeof</span> what <span class="comment">//"object"</span></div></pre></td></tr></table></figure>
+<h2 id="使用调试工具"><a href="#使用调试工具" class="headerlink" title="使用调试工具"></a>使用调试工具</h2><p>敲一些简短的代码可以直接在浏览器的调试工具中测试代码</p>
+<p>1.打开chrome或者firefox,ie也可以(<del>那个..ie6及以下…</del>)</p>
+<p>2.按f12或者右键选检查 点console选项卡 即可调试输入的代码</p>
+<h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><h3 id="加减操作符"><a href="#加减操作符" class="headerlink" title="加减操作符"></a>加减操作符</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span>+<span class="number">1</span> <span class="comment">//2</span></div><div class="line"><span class="number">2</span><span class="number">-1</span> <span class="comment">//1</span></div></pre></td></tr></table></figure>
+<p>加法还有个功能 拼接字符串(字符串的定义在[下面][#jump]<del>markdown是不带锚点 还是我不会用啊</del></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'a'</span>+<span class="string">'b'</span> = <span class="string">'ab'</span>;</div></pre></td></tr></table></figure>
+<p><del>还记得C不了</del><br>++(自增) </p>
+<p>–(自减)</p>
+<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><ul>
+<li>undefined(未定义)</li>
+<li>null(空)</li>
+<li>Number(数字)</li>
+<li>Boolean(布尔值)</li>
+<li>String(字符串)</li>
+<li>Symbol(符号 ES6新增)</li>
+</ul>
+<h3 id="Boolean-布尔值"><a href="#Boolean-布尔值" class="headerlink" title="Boolean 布尔值"></a>Boolean 布尔值</h3><p>只有两个值 true或false</p>
+<h3 id="Undefined类型"><a href="#Undefined类型" class="headerlink" title="Undefined类型"></a>Undefined类型</h3><p>只有一个值 undefined 使用var声明变量但没有初始化时，这个变量就是undefined</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> my;</div><div class="line"><span class="keyword">typeof</span> my <span class="comment">//"undefined"</span></div></pre></td></tr></table></figure>
+<p><strong>声明了没赋值是Undefined数据类型</strong><br><strong>如果没有定义变量就去引用会报错</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(str) <span class="comment">// 报错</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">'str'</span>) <span class="comment">// str 这是字符串</span></div></pre></td></tr></table></figure>
+<h3 id="Null类型"><a href="#Null类型" class="headerlink" title="Null类型"></a>Null类型</h3><p>也只有一个值 null</p>
+<p>表示的是将来可能用来保存对象的变量</p>
+<p>由于undefined派生自null</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="literal">undefined</span> == <span class="literal">null</span>; <span class="comment">//true;</span></div><div class="line"><span class="literal">undefined</span> === <span class="literal">null</span>; <span class="comment">//false</span></div></pre></td></tr></table></figure>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p><span name="#jump">字符串</span></p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="DiomandCrack.github.io2017/10/24/2-数据类型/" data-id="cj95tp2ms0000y47k6s3jml6f" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-1-初始JavaScript" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
-        
-            <header class="article-header">
-                
+                    
+                        <header class="article-header">
+                            
     
         <h1 itemprop="name">
             <a class="article-title" href="2017/10/23/1-初始JavaScript/">1.初识JavaScript</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                                
+                                    <div class="article-meta">
+                                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="2017/10/23/1-初始JavaScript/">
@@ -233,27 +402,28 @@
     </div>
 
 
-                        
+                                            
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="categories/笔记/">笔记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="categories/笔记/JavaScirpt学习笔记/">JavaScirpt学习笔记</a>
     </div>
 
-                        
+                                                
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="tags/js笔记/">js笔记</a>
     </div>
 
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="初识JavaScript"><a href="#初识JavaScript" class="headerlink" title="初识JavaScript"></a>初识JavaScript</h1><h2 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript"></a>什么是JavaScript</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>JavaScript 诞生于1995年，是一种基于对象和事件驱动的客户端脚本语言，主要处理表单验证功能</p>
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+
+                                    
+                                            
+                                                    <h1 id="初识JavaScript"><a href="#初识JavaScript" class="headerlink" title="初识JavaScript"></a>初识JavaScript</h1><h2 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript"></a>什么是JavaScript</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>JavaScript 诞生于1995年，是一种基于对象和事件驱动的客户端脚本语言，主要处理表单验证功能</p>
 <h3 id="基本组成"><a href="#基本组成" class="headerlink" title="基本组成"></a>基本组成</h3><p>JavaScript 由3部分组成</p>
 <ul>
 <li>ECMAScript  核心语法 ECMA-262标准</li>
@@ -278,9 +448,10 @@
 <h2 id="了解JavaScript"><a href="#了解JavaScript" class="headerlink" title="了解JavaScript"></a>了解JavaScript</h2><h3 id="如何在HTML中使用JavaScript"><a href="#如何在HTML中使用JavaScript" class="headerlink" title="如何在HTML中使用JavaScript"></a>如何在HTML中使用JavaScript</h3><p>使用<code>&lt;script&gt;</code>元素 </p>
 <p>使用<code>&lt;script&gt;</code>元素有两种方法</p>
 <p>1.直接在<code>&lt;script&gt;&lt;/script&gt;</code>标签中嵌入JavaScript代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">        alert('hello world!');</span></div><div class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">        alert(<span class="string">'hello world!'</span>);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>2.链接外部JavaScript文件</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p> 一般把所有<code>&lt;script&gt;&lt;/script&gt;</code>都放在<code>&lt;body&gt;&lt;/body&gt;</code>元素中最后面<br>并外链JavaScript文件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--我是内容--&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p><strong>不应该在外链src的<code>&lt;script&gt;&lt;/script&gt;</code>元素之间插入js代码</strong></p>
 <h3 id="JavaSrcipt基本语法"><a href="#JavaSrcipt基本语法" class="headerlink" title="JavaSrcipt基本语法"></a>JavaSrcipt基本语法</h3><p>1.JavaScript中严格区分大小写</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dog;</div><div class="line"><span class="keyword">var</span> Dog; <span class="comment">//这是两个完全不同的变量</span></div></pre></td></tr></table></figure>
@@ -345,16 +516,29 @@
 <p>7.代码测试: <code>console.log()</code></p>
 <p><code>console.log()</code>向控制台打印括号中的内容</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'hello,world'</span>);</div></pre></td></tr></table></figure>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><p>JavaScript 由三部分组成 ECMAScript、DOM和BOM组成</p>
+</li>
+<li><p>有两种方法引用JavaScript代码 一种是内部嵌套，另一种是外链JavaScript文件</p>
+</li>
+<li><p>标识符命名规则 </p>
+</li>
+<li><p>关键字和保留字不能用作标识符</p>
+</li>
+<li><p>可以用<code>console.log()</code>向控制台打印内容</p>
+</li>
+</ul>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
 
 
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/23/1-初始JavaScript/" data-id="cj95cmvkg0000vc7k2hg7bn1u" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/23/1-初始JavaScript/" data-id="cj95tp2mz0001y47kv05zcklu" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -420,10 +604,10 @@
     })(jQuery);
 </script>
 
-            
+                                        
     
 
-        </footer>
+                                </footer>
     </div>
     
 </article>
@@ -433,18 +617,18 @@
     <article id="post-hello" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
-        
-            <header class="article-header">
-                
+                    
+                        <header class="article-header">
+                            
     
         <h1 itemprop="name">
             <a class="article-title" href="2017/10/22/hello/">My First Blog</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                                
+                                    <div class="article-meta">
+                                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="2017/10/22/hello/">
@@ -453,42 +637,43 @@
     </div>
 
 
-                        
+                                            
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="categories/日志/">日志</a>
     </div>
 
-                        
+                                                
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="tags/Hello-World/">Hello World!</a>
     </div>
 
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="我的第一篇博客！"><a href="#我的第一篇博客！" class="headerlink" title="我的第一篇博客！"></a>我的第一篇博客！</h1><p>半路出家刚开始接触前端这行 需要学习很多知识 学习前端是兴趣使然<br>近来发现前端体系异常庞大与繁杂<br>希望：<br>以后不会轻易迷失在各种诱惑里 也不会在向前走的同时无暇顾及反省自己</p>
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+
+                                    
+                                            
+                                                    <h1 id="我的第一篇博客！"><a href="#我的第一篇博客！" class="headerlink" title="我的第一篇博客！"></a>我的第一篇博客！</h1><p>半路出家刚开始接触前端这行 需要学习很多知识 学习前端是兴趣使然<br>近来发现前端体系异常庞大与繁杂<br>希望：<br>以后不会轻易迷失在各种诱惑里 也不会在向前走的同时无暇顾及反省自己</p>
 <p>“人生不能承受的，不是存在，而是作为自我的存在。</p>
 <p>生活，生活并没有任何幸福可言。生活，就是在这尘世中带着痛苦的自我。</p>
 <p>然而存在，存在就是幸福。存在：变成喷泉，在这石头的承水盘中，世界仿佛热雨一般倾泻而下。”</p>
 <p>–米兰昆德拉 《不朽》</p>
 
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
 
 
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/22/hello/" data-id="cj95cmvkq0005vc7kkvhmcip3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/22/hello/" data-id="cj95tp2n50005y47kb9piz4pr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -554,10 +739,10 @@
     })(jQuery);
 </script>
 
-            
+                                        
     
 
-        </footer>
+                                </footer>
     </div>
     
 </article>
@@ -567,18 +752,18 @@
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
-        
-            <header class="article-header">
-                
+                    
+                        <header class="article-header">
+                            
     
         <h1 itemprop="name">
             <a class="article-title" href="2017/10/22/hello-world/">Hello World</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                                
+                                    <div class="article-meta">
+                                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="2017/10/22/hello-world/">
@@ -587,17 +772,18 @@
     </div>
 
 
+                                            
+                                                
+                                    </div>
+                                    
+                        </header>
                         
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+                            
+                                <div class="article-entry" itemprop="articleBody">
+
+                                    
+                                            
+                                                    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
@@ -607,16 +793,16 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
 
 
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/22/hello-world/" data-id="cj95cmvkm0002vc7k0r1yktlv" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/22/hello-world/" data-id="cj95tp2n40004y47k0dznimli" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -682,10 +868,10 @@
     })(jQuery);
 </script>
 
-            
+                                        
     
 
-        </footer>
+                                </footer>
     </div>
     
 </article>
@@ -701,6 +887,25 @@
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="2017/10/24/2-数据类型/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="categories/笔记/">笔记</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="categories/笔记/JavaScirpt学习笔记/">JavaScirpt学习笔记</a></p>
+                            <p class="item-title"><a href="2017/10/24/2-数据类型/" class="title">2.数据类型</a></p>
+                            <p class="item-date"><time datetime="2017-10-24T14:38:55.000Z" itemprop="datePublished">2017-10-24</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -768,7 +973,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="categories/日志/">日志</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="categories/笔记/">笔记</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="categories/笔记/JavaScirpt学习笔记/">JavaScirpt学习笔记</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="categories/日志/">日志</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="categories/笔记/">笔记</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="categories/笔记/JavaScirpt学习笔记/">JavaScirpt学习笔记</a><span class="category-list-count">2</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -777,7 +982,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2017/10/">十月 2017</a><span class="archive-list-count">3</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2017/10/">十月 2017</a><span class="archive-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -786,7 +991,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="tags/Hello-World/">Hello World!</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/js笔记/">js笔记</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="tags/Hello-World/">Hello World!</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/js笔记/">js笔记</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -795,7 +1000,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="tags/Hello-World/" style="font-size: 10px;">Hello World!</a> <a href="tags/js笔记/" style="font-size: 10px;">js笔记</a>
+            <a href="tags/Hello-World/" style="font-size: 10px;">Hello World!</a> <a href="tags/js笔记/" style="font-size: 20px;">js笔记</a>
         </div>
     </div>
 
