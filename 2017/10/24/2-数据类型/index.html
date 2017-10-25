@@ -5,18 +5,18 @@
     
     <title>2.数据类型 | 张堃的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="操作符与数据类型检测数据类型-typeof 操作符12var awesome = &quot;被自己帅醒&quot;;typeof awesome //&quot;string&quot; typeof 输出的格式是字符串 1234var a=1;typeof a; //&quot;number&quot;var b=ture;typeof b; //“boolean” typeof 可以返回的值有  “undefined” “boolean” “stri">
+    <meta name="description" content="操作符与数据类型JavaScript数据类型分为基本数据类型和引用数据类型 基本数据类型又分为:  Undefined (未定义) Null (空指针) Number (数字) Boolean (布尔值) String (字符串) Symbol (符号 ES6新增)  引用数据类型为:  对象  除了基本数据类型 剩下都是引用数据类型 检测数据类型-typeof 操作符12var awesome">
 <meta name="keywords" content="js笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2.数据类型">
 <meta property="og:url" content="DiomandCrack.github.io/2017/10/24/2-数据类型/index.html">
 <meta property="og:site_name" content="张堃的博客">
-<meta property="og:description" content="操作符与数据类型检测数据类型-typeof 操作符12var awesome = &quot;被自己帅醒&quot;;typeof awesome //&quot;string&quot; typeof 输出的格式是字符串 1234var a=1;typeof a; //&quot;number&quot;var b=ture;typeof b; //“boolean” typeof 可以返回的值有  “undefined” “boolean” “stri">
+<meta property="og:description" content="操作符与数据类型JavaScript数据类型分为基本数据类型和引用数据类型 基本数据类型又分为:  Undefined (未定义) Null (空指针) Number (数字) Boolean (布尔值) String (字符串) Symbol (符号 ES6新增)  引用数据类型为:  对象  除了基本数据类型 剩下都是引用数据类型 检测数据类型-typeof 操作符12var awesome">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-25T04:25:27.560Z">
+<meta property="og:updated_time" content="2017-10-25T13:03:59.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2.数据类型">
-<meta name="twitter:description" content="操作符与数据类型检测数据类型-typeof 操作符12var awesome = &quot;被自己帅醒&quot;;typeof awesome //&quot;string&quot; typeof 输出的格式是字符串 1234var a=1;typeof a; //&quot;number&quot;var b=ture;typeof b; //“boolean” typeof 可以返回的值有  “undefined” “boolean” “stri">
+<meta name="twitter:description" content="操作符与数据类型JavaScript数据类型分为基本数据类型和引用数据类型 基本数据类型又分为:  Undefined (未定义) Null (空指针) Number (数字) Boolean (布尔值) String (字符串) Symbol (符号 ES6新增)  引用数据类型为:  对象  除了基本数据类型 剩下都是引用数据类型 检测数据类型-typeof 操作符12var awesome">
     
 
     
@@ -255,7 +255,22 @@
 
                                     
                                             
-                                                    <h1 id="操作符与数据类型"><a href="#操作符与数据类型" class="headerlink" title="操作符与数据类型"></a>操作符与数据类型</h1><h2 id="检测数据类型-typeof-操作符"><a href="#检测数据类型-typeof-操作符" class="headerlink" title="检测数据类型-typeof 操作符"></a>检测数据类型-typeof 操作符</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> awesome = <span class="string">"被自己帅醒"</span>;</div><div class="line"><span class="keyword">typeof</span> awesome <span class="comment">//"string"</span></div></pre></td></tr></table></figure>
+                                                    <h1 id="操作符与数据类型"><a href="#操作符与数据类型" class="headerlink" title="操作符与数据类型"></a>操作符与数据类型</h1><p>JavaScript数据类型分为基本数据类型和引用数据类型</p>
+<p>基本数据类型又分为:</p>
+<ul>
+<li>Undefined (未定义)</li>
+<li>Null (空指针)</li>
+<li>Number (数字)</li>
+<li>Boolean (布尔值)</li>
+<li>String (字符串)</li>
+<li>Symbol (符号 ES6新增)</li>
+</ul>
+<p>引用数据类型为:</p>
+<ul>
+<li>对象</li>
+</ul>
+<p>除了基本数据类型 剩下都是引用数据类型</p>
+<h2 id="检测数据类型-typeof-操作符"><a href="#检测数据类型-typeof-操作符" class="headerlink" title="检测数据类型-typeof 操作符"></a>检测数据类型-typeof 操作符</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> awesome = <span class="string">"被自己帅醒"</span>;</div><div class="line"><span class="keyword">typeof</span> awesome <span class="comment">//"string"</span></div></pre></td></tr></table></figure>
 <p><strong>typeof 输出的格式是字符串</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</div><div class="line"><span class="keyword">typeof</span> a; <span class="comment">//"number"</span></div><div class="line"><span class="keyword">var</span> b=ture;</div><div class="line"><span class="keyword">typeof</span> b; <span class="comment">//“boolean”</span></div></pre></td></tr></table></figure>
 <p>typeof 可以返回的值有</p>
@@ -271,14 +286,79 @@
 <h2 id="使用调试工具"><a href="#使用调试工具" class="headerlink" title="使用调试工具"></a>使用调试工具</h2><p>敲一些简短的代码可以直接在浏览器的调试工具中测试代码</p>
 <p>1.打开chrome或者firefox,ie也可以(<del>那个..ie6及以下…</del>)</p>
 <p>2.按f12或者右键选检查 点console选项卡 即可调试输入的代码</p>
+<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><ul>
+<li>undefined(未定义)</li>
+<li>null(空)</li>
+<li>Number(数字)</li>
+<li>Boolean(布尔值)</li>
+<li>String(字符串)</li>
+<li>Symbol(符号 ES6新增)</li>
+</ul>
+<h3 id="Boolean-布尔类型"><a href="#Boolean-布尔类型" class="headerlink" title="Boolean 布尔类型"></a>Boolean 布尔类型</h3><p>只有两个值 true或false</p>
+<ul>
+<li>true 正确</li>
+<li>false 错误</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="literal">true</span> <span class="comment">// 这个变量储存的是 布尔值</span></div><div class="line"><span class="keyword">var</span> b = <span class="string">'true'</span> <span class="comment">// 这个变量储存的是 字符串</span></div></pre></td></tr></table></figure>
+<h3 id="Undefined类型"><a href="#Undefined类型" class="headerlink" title="Undefined类型"></a>Undefined类型</h3><p>只有一个值 undefined 使用var声明变量但没有初始化时，这个变量就是undefined</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> my;</div><div class="line"><span class="keyword">typeof</span> my <span class="comment">//"undefined"</span></div></pre></td></tr></table></figure>
+<p><strong>声明了没赋值是Undefined数据类型</strong><br><strong>如果没有定义变量就去引用会报错</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(str) <span class="comment">// 报错</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">'str'</span>) <span class="comment">// str 这是字符串</span></div></pre></td></tr></table></figure>
+<h3 id="Null类型"><a href="#Null类型" class="headerlink" title="Null类型"></a>Null类型</h3><p>也只有一个值 null</p>
+<p>表示的是将来可能用来保存对象的变量</p>
+<p>由于undefined派生自null</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="literal">undefined</span> == <span class="literal">null</span>; <span class="comment">//true;</span></div><div class="line"><span class="literal">undefined</span> === <span class="literal">null</span>; <span class="comment">//false ???</span></div></pre></td></tr></table></figure>
+<h3 id="Number-数字类型"><a href="#Number-数字类型" class="headerlink" title="Number 数字类型"></a>Number 数字类型</h3><p>正常情况下为十进制,如果数字前两位为0x后面都是十六进制数字(0~9,a~f)</p>
+<ul>
+<li>取值范围</li>
+</ul>
+<p>ECMAScript 能取到的</p>
+<p>最大值为： 1.7976931348623157e+308</p>
+<p>最小值为： 5e-324</p>
+<p>如果超出这个取值范围就转换为： Infinity</p>
+<p>负数转换为： -Infinity</p>
+<p>正数转换为： +Infinity</p>
+<ul>
+<li>整数</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">5</span> <span class="comment">//整数</span></div><div class="line"><span class="keyword">var</span> a = <span class="number">0xff</span> <span class="comment">// 255 转为10进制：15*16的0次方+15*16的1次方 15+240=255</span></div><div class="line"><span class="keyword">var</span> b = <span class="number">0xAA</span> <span class="comment">//170 转为10进制：10*16的0次方+ 10*16的1次方 10+160=170</span></div></pre></td></tr></table></figure>
+<ul>
+<li>浮点数(小数)</li>
+</ul>
+<blockquote>
+<p>由于保存浮点数值需要的内存空间是保存整数值的两倍因此ECMAScript会不失时机将浮点数转换为整数值</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> float = <span class="number">1.0</span>; <span class="comment">//1</span></div></pre></td></tr></table></figure>
+<p>浮点数的最高精度是17为小数,但运算时浮点数是不准确的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">0.1</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">0.2</span>;</div><div class="line"><span class="built_in">console</span>.log(a + b); <span class="comment">//0.30000000000000004</span></div></pre></td></tr></table></figure>
+<p><strong>所以浮点数的计算结果不能判断是否为一个特定的浮点数</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">0.1</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">0.2</span>;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(a + b == <span class="number">0.3</span>); <span class="comment">// false</span></div></pre></td></tr></table></figure>
+<ul>
+<li>NaN</li>
+</ul>
+<p>NaN (Not a Number) 是一个特殊的数字类型<br>表示的是在数字运算中出现了错误</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">0</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">1</span>;</div><div class="line"><span class="built_in">console</span>.log(b / a); <span class="comment">//NaN</span></div></pre></td></tr></table></figure>
+<p>特点：</p>
+<p>1.任何涉及NaN的运算都会得出NaN </p>
+<p>2.NaN跟任何值都不相等<strong>包括它自己</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="literal">NaN</span> == <span class="literal">NaN</span>); <span class="comment">//false</span></div></pre></td></tr></table></figure>
+<h3 id="String-字符串类型"><a href="#String-字符串类型" class="headerlink" title="String 字符串类型"></a><span id="jump">String 字符串类型</span></h3><p>String 类型用于表示0或多个字符(Unicode字符)组成的字符序列,<br>由单引号、双引号或反引号表示</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> firstName = <span class="string">'Final'</span>;</div><div class="line"><span class="keyword">var</span> lastName = <span class="string">"Fantasy"</span></div><div class="line"><span class="keyword">var</span> game = <span class="string">`Final Fantasy`</span>;</div></pre></td></tr></table></figure>
+<p><strong>引号必须成对出现</strong></p>
+<ul>
+<li>单引号开头必须单引号结尾</li>
+<li>双引号开头必须双引号结尾</li>
+<li>反引号开头必须反引号结尾</li>
+</ul>
+<p>字符串的特点: ECMAScript的字符串是不可更改的，一旦创建就不可改变,<br>如果改变变量中的字符串，必须销毁原来的字符串，然后创建新的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> userName = <span class="string">'Diamond'</span>;</div><div class="line"><span class="keyword">var</span> userName = <span class="string">'Diamond Crack'</span>;</div></pre></td></tr></table></figure>
 <h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><h3 id="加减操作符"><a href="#加减操作符" class="headerlink" title="加减操作符"></a>加减操作符</h3><p>加操作符</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">1</span>;</div><div class="line">num += <span class="number">1</span> <span class="comment">//2</span></div><div class="line">num = num + <span class="number">1</span> <span class="comment">//2</span></div></pre></td></tr></table></figure>
-<p>加法还有个功能 拼接字符串(字符串的定义在<a href="#jump">下面</a>)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">1</span>;</div><div class="line">num += <span class="number">1</span> <span class="comment">//2 等价于 num = num + 1</span></div></pre></td></tr></table></figure>
+<p>加法还有个功能 拼接字符串(字符串的定义在)</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="string">'a'</span>+<span class="string">'b'</span></div><div class="line"><span class="comment">//"ab"</span></div></pre></td></tr></table></figure>
 <p>减操作符</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">2</span>;</div><div class="line"> </div><div class="line">num -</div></pre></td></tr></table></figure>
-<p>加减一元操作符</p>
-<p><del>还记得C不了</del></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">2</span>;</div><div class="line">num -=<span class="number">1</span>; <span class="comment">//1 等价于 num = num - 1</span></div></pre></td></tr></table></figure>
+<p>一元操作符</p>
 <ul>
 <li><code>++</code> (自增) </li>
 </ul>
@@ -299,24 +379,15 @@
 <p>2.后自减</p>
 <p>等号右边赋值给左边之<strong>后自</strong>己<strong>减</strong>1</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> number = <span class="number">666</span>;</div><div class="line">another = number--;</div><div class="line"><span class="built_in">console</span>.log(number); <span class="comment">//666</span></div><div class="line"><span class="built_in">console</span>.log(another); <span class="comment">//665</span></div></pre></td></tr></table></figure>
-<h3 id="乘除操作符"><a href="#乘除操作符" class="headerlink" title="乘除操作符"></a>乘除操作符</h3><h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><ul>
-<li>undefined(未定义)</li>
-<li>null(空)</li>
-<li>Number(数字)</li>
-<li>Boolean(布尔值)</li>
-<li>String(字符串)</li>
-<li>Symbol(符号 ES6新增)</li>
-</ul>
-<h3 id="Boolean-布尔值"><a href="#Boolean-布尔值" class="headerlink" title="Boolean 布尔值"></a>Boolean 布尔值</h3><p>只有两个值 true或false</p>
-<h3 id="Undefined类型"><a href="#Undefined类型" class="headerlink" title="Undefined类型"></a>Undefined类型</h3><p>只有一个值 undefined 使用var声明变量但没有初始化时，这个变量就是undefined</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> my;</div><div class="line"><span class="keyword">typeof</span> my <span class="comment">//"undefined"</span></div></pre></td></tr></table></figure>
-<p><strong>声明了没赋值是Undefined数据类型</strong><br><strong>如果没有定义变量就去引用会报错</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(str) <span class="comment">// 报错</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">'str'</span>) <span class="comment">// str 这是字符串</span></div></pre></td></tr></table></figure>
-<h3 id="Null类型"><a href="#Null类型" class="headerlink" title="Null类型"></a>Null类型</h3><p>也只有一个值 null</p>
-<p>表示的是将来可能用来保存对象的变量</p>
-<p>由于undefined派生自null</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="literal">undefined</span> == <span class="literal">null</span>; <span class="comment">//true;</span></div><div class="line"><span class="literal">undefined</span> === <span class="literal">null</span>; <span class="comment">//false</span></div></pre></td></tr></table></figure>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a><span id="jump">字符串</span></h3>
+<h3 id="乘除操作符"><a href="#乘除操作符" class="headerlink" title="乘除操作符"></a>乘除操作符</h3><p>1.乘法 </p>
+<p>乘法操作符(*)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">5</span>*<span class="number">5</span> <span class="comment">//结果为25</span></div></pre></td></tr></table></figure>
+<p>2.除法</p>
+<p>除法操作符(/)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">4</span>,</div><div class="line">    b=<span class="number">2</span>;</div><div class="line">a / b = <span class="number">2</span>;</div></pre></td></tr></table></figure>
+<p>3.求余数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">20</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">11</span>;</div><div class="line">a % b <span class="comment">// 9</span></div></pre></td></tr></table></figure>
+
                                                         
                                 </div>
                                 <footer class="article-footer">
@@ -326,7 +397,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/24/2-数据类型/" data-id="cj96jrop000028o7khk8sptkh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/24/2-数据类型/" data-id="cj972kbhr00052k7kq6bdzit0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
