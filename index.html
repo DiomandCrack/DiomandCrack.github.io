@@ -270,12 +270,35 @@
 <h2 id="使用调试工具"><a href="#使用调试工具" class="headerlink" title="使用调试工具"></a>使用调试工具</h2><p>敲一些简短的代码可以直接在浏览器的调试工具中测试代码</p>
 <p>1.打开chrome或者firefox,ie也可以(<del>那个..ie6及以下…</del>)</p>
 <p>2.按f12或者右键选检查 点console选项卡 即可调试输入的代码</p>
-<h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><h3 id="加减操作符"><a href="#加减操作符" class="headerlink" title="加减操作符"></a>加减操作符</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span>+<span class="number">1</span> <span class="comment">//2</span></div><div class="line"><span class="number">2</span><span class="number">-1</span> <span class="comment">//1</span></div></pre></td></tr></table></figure>
+<h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><h3 id="加减操作符"><a href="#加减操作符" class="headerlink" title="加减操作符"></a>加减操作符</h3><p>加操作符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">1</span>;</div><div class="line">num += <span class="number">1</span> <span class="comment">//2</span></div><div class="line">num = num + <span class="number">1</span> <span class="comment">//2</span></div></pre></td></tr></table></figure>
 <p>加法还有个功能 拼接字符串(字符串的定义在<a href="#jump">下面</a>)</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'a'</span>+<span class="string">'b'</span> = <span class="string">'ab'</span>;</div></pre></td></tr></table></figure>
-<p><del>还记得C不了</del><br>++(自增) </p>
-<p>–(自减)</p>
-<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="string">'a'</span>+<span class="string">'b'</span></div><div class="line"><span class="comment">//"ab"</span></div></pre></td></tr></table></figure>
+<p>减操作符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">2</span>;</div><div class="line"> </div><div class="line">num -</div></pre></td></tr></table></figure>
+<p>加减一元操作符</p>
+<p><del>还记得C不了</del></p>
+<ul>
+<li><code>++</code> (自增) </li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> number = <span class="number">50</span></div><div class="line">++number <span class="comment">//51 等价于 number = number + 1 number先加1(51)再把新的值给number</span></div></pre></td></tr></table></figure>
+<p>1.前自增</p>
+<p>等号右边赋值给左边之<strong>前自</strong>己<strong>增</strong>加1</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> number = <span class="number">20</span>;</div><div class="line"><span class="keyword">var</span> another = ++number; </div><div class="line"><span class="built_in">console</span>.log(number) <span class="comment">//21</span></div><div class="line"><span class="built_in">console</span>.log(another) <span class="comment">//21</span></div><div class="line"><span class="comment">//number先加1 再赋值(=)给another</span></div></pre></td></tr></table></figure>
+<p>2.后自增</p>
+<p>等号右边赋值给左边之<strong>后自</strong>己<strong>赠</strong>加1</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> number = <span class="number">10</span>;</div><div class="line"><span class="keyword">var</span> another = number++; </div><div class="line"><span class="built_in">console</span>.log(another)<span class="comment">//10</span></div><div class="line"><span class="built_in">console</span>.log(number) <span class="comment">//11</span></div></pre></td></tr></table></figure>
+<ul>
+<li><code>--</code> (自减)</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> number = <span class="number">30</span>;</div><div class="line">number--; <span class="comment">//等价于 number = number - 1</span></div></pre></td></tr></table></figure>
+<p>1.前自减</p>
+<p>等号右边赋值给左边之<strong>前自</strong>己<strong>减</strong>1</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> number = <span class="number">30</span>;</div><div class="line">another = --number;</div><div class="line"><span class="built_in">console</span>.log(number); <span class="comment">//29</span></div><div class="line"><span class="built_in">console</span>.log(another); <span class="comment">//29</span></div></pre></td></tr></table></figure>
+<p>2.后自减</p>
+<p>等号右边赋值给左边之<strong>后自</strong>己<strong>减</strong>1</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> number = <span class="number">666</span>;</div><div class="line">another = number--;</div><div class="line"><span class="built_in">console</span>.log(number); <span class="comment">//666</span></div><div class="line"><span class="built_in">console</span>.log(another); <span class="comment">//665</span></div></pre></td></tr></table></figure>
+<h3 id="乘除操作符"><a href="#乘除操作符" class="headerlink" title="乘除操作符"></a>乘除操作符</h3><h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><ul>
 <li>undefined(未定义)</li>
 <li>null(空)</li>
 <li>Number(数字)</li>
@@ -292,8 +315,7 @@
 <p>表示的是将来可能用来保存对象的变量</p>
 <p>由于undefined派生自null</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="literal">undefined</span> == <span class="literal">null</span>; <span class="comment">//true;</span></div><div class="line"><span class="literal">undefined</span> === <span class="literal">null</span>; <span class="comment">//false</span></div></pre></td></tr></table></figure>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p><span id="jump">字符串</span></p>
-
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a><span id="jump">字符串</span></h3>
                                                         
                                 </div>
                                 <footer class="article-footer">
@@ -303,7 +325,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/24/2-数据类型/" data-id="cj95uk5zu00020c7kyiftwf90" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/24/2-数据类型/" data-id="cj96jrop000028o7khk8sptkh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -448,7 +470,7 @@
 <h2 id="了解JavaScript"><a href="#了解JavaScript" class="headerlink" title="了解JavaScript"></a>了解JavaScript</h2><h3 id="如何在HTML中使用JavaScript"><a href="#如何在HTML中使用JavaScript" class="headerlink" title="如何在HTML中使用JavaScript"></a>如何在HTML中使用JavaScript</h3><p>使用<code>&lt;script&gt;</code>元素 </p>
 <p>使用<code>&lt;script&gt;</code>元素有两种方法</p>
 <p>1.直接在<code>&lt;script&gt;&lt;/script&gt;</code>标签中嵌入JavaScript代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">        alert(<span class="string">'hello world!'</span>);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">        alert('hello world!');</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>2.链接外部JavaScript文件</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 <p> 一般把所有<code>&lt;script&gt;&lt;/script&gt;</code>都放在<code>&lt;body&gt;&lt;/body&gt;</code>元素中最后面<br>并外链JavaScript文件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--我是内容--&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
@@ -538,7 +560,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/23/1-初始JavaScript/" data-id="cj95uk5zy00050c7kti7hfpz1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/23/1-初始JavaScript/" data-id="cj96jroou00008o7k6odcck0a" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -673,7 +695,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/22/hello/" data-id="cj95uk5zo00000c7kggwxnncc" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/22/hello/" data-id="cj96jrop500068o7ko1ujdhje" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -802,7 +824,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/22/hello-world/" data-id="cj95uk5zz00060c7k7x6hfurb" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/22/hello-world/" data-id="cj96jrop400058o7k619mos2i" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
