@@ -5,18 +5,20 @@
     
     <title>1.初识JavaScript | 张堃的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="初识JavaScript什么是JavaScript基本概念JavaScript 诞生于1995年，是一种基于对象和事件驱动的客户端脚本语言，主要处理表单验证功能 基本组成JavaScript 由3部分组成  ECMAScript  核心语法 ECMA-262标准 DOM (Document Object Model) 文档对象模型 BOM (Brower Object Model) 浏览器对象模型">
+    <meta name="description" content="初识JavaScript什么是JavaScript">
 <meta name="keywords" content="js笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1.初识JavaScript">
 <meta property="og:url" content="DiomandCrack.github.io/2017/10/23/1-初始JavaScript/index.html">
 <meta property="og:site_name" content="张堃的博客">
-<meta property="og:description" content="初识JavaScript什么是JavaScript基本概念JavaScript 诞生于1995年，是一种基于对象和事件驱动的客户端脚本语言，主要处理表单验证功能 基本组成JavaScript 由3部分组成  ECMAScript  核心语法 ECMA-262标准 DOM (Document Object Model) 文档对象模型 BOM (Brower Object Model) 浏览器对象模型">
+<meta property="og:description" content="初识JavaScript什么是JavaScript">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-24T14:56:02.336Z">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509039047376&di=5eaabfff25c6166ad3a87b1356b237ad&imgtype=0&src=http%3A%2F%2Ftc.sinaimg.cn%2Fmaxwidth.2048%2Ftc.service.weibo.com%2Fp3_pstatp_com%2F82d1a99692bd348053ec11b00a6a1d28.jpg">
+<meta property="og:updated_time" content="2017-10-26T15:15:37.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="1.初识JavaScript">
-<meta name="twitter:description" content="初识JavaScript什么是JavaScript基本概念JavaScript 诞生于1995年，是一种基于对象和事件驱动的客户端脚本语言，主要处理表单验证功能 基本组成JavaScript 由3部分组成  ECMAScript  核心语法 ECMA-262标准 DOM (Document Object Model) 文档对象模型 BOM (Brower Object Model) 浏览器对象模型">
+<meta name="twitter:description" content="初识JavaScript什么是JavaScript">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509039047376&di=5eaabfff25c6166ad3a87b1356b237ad&imgtype=0&src=http%3A%2F%2Ftc.sinaimg.cn%2Fmaxwidth.2048%2Ftc.service.weibo.com%2Fp3_pstatp_com%2F82d1a99692bd348053ec11b00a6a1d28.jpg">
     
 
     
@@ -41,6 +43,17 @@
     
     
     
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?640089d55442be60580cb19a8325c0f1";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
     
 
 
@@ -214,6 +227,14 @@
             <section id="main"><article id="post-1-初始JavaScript" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
+            
+	
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509039047376&di=5eaabfff25c6166ad3a87b1356b237ad&imgtype=0&src=http%3A%2F%2Ftc.sinaimg.cn%2Fmaxwidth.2048%2Ftc.service.weibo.com%2Fp3_pstatp_com%2F82d1a99692bd348053ec11b00a6a1d28.jpg" class="article-banner" />
+	
+
+
+
+                
                     
                         <header class="article-header">
                             
@@ -255,7 +276,8 @@
 
                                     
                                             
-                                                    <h1 id="初识JavaScript"><a href="#初识JavaScript" class="headerlink" title="初识JavaScript"></a>初识JavaScript</h1><h2 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript"></a>什么是JavaScript</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>JavaScript 诞生于1995年，是一种基于对象和事件驱动的客户端脚本语言，主要处理表单验证功能</p>
+                                                    <h1 id="初识JavaScript"><a href="#初识JavaScript" class="headerlink" title="初识JavaScript"></a>初识JavaScript</h1><h2 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript"></a>什么是JavaScript</h2> <a id="more"></a>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>JavaScript 诞生于1995年，是一种基于对象和事件驱动的客户端脚本语言，曾经主要处理表单验证功能</p>
 <h3 id="基本组成"><a href="#基本组成" class="headerlink" title="基本组成"></a>基本组成</h3><p>JavaScript 由3部分组成</p>
 <ul>
 <li>ECMAScript  核心语法 ECMA-262标准</li>
@@ -280,20 +302,20 @@
 <h2 id="了解JavaScript"><a href="#了解JavaScript" class="headerlink" title="了解JavaScript"></a>了解JavaScript</h2><h3 id="如何在HTML中使用JavaScript"><a href="#如何在HTML中使用JavaScript" class="headerlink" title="如何在HTML中使用JavaScript"></a>如何在HTML中使用JavaScript</h3><p>使用<code>&lt;script&gt;</code>元素 </p>
 <p>使用<code>&lt;script&gt;</code>元素有两种方法</p>
 <p>1.直接在<code>&lt;script&gt;&lt;/script&gt;</code>标签中嵌入JavaScript代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">        alert('hello world!');</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">        alert(<span class="string">'hello world!'</span>);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>2.链接外部JavaScript文件</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-<p> 一般把所有<code>&lt;script&gt;&lt;/script&gt;</code>都放在<code>&lt;body&gt;&lt;/body&gt;</code>元素中最后面<br>并外链JavaScript文件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--我是内容--&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>...<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p> 一般把所有<code>&lt;script&gt;&lt;/script&gt;</code>都放在<code>&lt;body&gt;&lt;/body&gt;</code>元素中最后面<br>并外链JavaScript文件<br><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--我是内容--&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"example.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p><strong>不应该在外链src的<code>&lt;script&gt;&lt;/script&gt;</code>元素之间插入js代码</strong></p>
 <h3 id="JavaSrcipt基本语法"><a href="#JavaSrcipt基本语法" class="headerlink" title="JavaSrcipt基本语法"></a>JavaSrcipt基本语法</h3><p>1.JavaScript中严格区分大小写</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dog;</div><div class="line"><span class="keyword">var</span> Dog; <span class="comment">//这是两个完全不同的变量</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> dog;</div><div class="line"><span class="keyword">var</span> Dog; <span class="comment">//这是两个完全不同的变量</span></div></pre></td></tr></table></figure>
 <p>2.每一条语句之后都要加上一个分号;</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> a;</div></pre></td></tr></table></figure>
 <p>3.注释 注释有两种</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//单行注释</span></div><div class="line"></div><div class="line"><span class="comment">/*多行注释*/</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="comment">//单行注释</span></div><div class="line"></div><div class="line"><span class="comment">/*多行注释*/</span></div></pre></td></tr></table></figure>
 <p>4.严格模式</p>
 <p>引入严格模式 使JavaScript 不安全的操作会报错 不确定的行为得到处理启用严格模式，在顶部添加代码</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="meta">"use strict"</span>;</div></pre></td></tr></table></figure>
 <p>5.标识符</p>
 <p>变量名、常量名、函数名、函数参数名、对象属性名的统称</p>
 <p>标识符的命名规则</p>
@@ -309,17 +331,17 @@
 <li><p>标识符采用驼峰大小写格式: 第一个单词全小写 剩下的每个单词的首字母大写</p>
 </li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myFirstCar;</div><div class="line"><span class="keyword">var</span> nothingToDo;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> myFirstCar;</div><div class="line"><span class="keyword">var</span> nothingToDo;</div></pre></td></tr></table></figure>
 <p>关键字 </p>
 <p>关键字可用于表示控制语句的开始或结束，或者用于执行特定操作按照规定<br>关键字不能用作标识符。以下是JavaScript全部关键字</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">| break    | do       | instanceof | typeof |</div><div class="line">| case     | else     | new        | var    |</div><div class="line">| catch    | finally  | return     | void   |</div><div class="line">| continue | for      | switch     | while  |</div><div class="line">| debugger | function | this       | with   |</div><div class="line">| defalut  | if       | throw      | delete |</div><div class="line">| in       | try      |            |        |</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">| break    | do       | instanceof | typeof |</div><div class="line">| case     | else     | new        | var    |</div><div class="line">| catch    | finally  | return     | void   |</div><div class="line">| continue | for      | switch     | while  |</div><div class="line">| debugger | function | this       | with   |</div><div class="line">| defalut  | if       | throw      | delete |</div><div class="line">| in       | try      |            |        |</div></pre></td></tr></table></figure>
 <p>严格模式下  关键字</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">| class | enum   | extends | super |</div><div class="line">| const | export | import  |       |</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">| class | enum   | extends | super |</div><div class="line">| const | export | import  |       |</div></pre></td></tr></table></figure>
 <p>保留字</p>
 <p>保留字还没有任何特定的用途。当它们有将来被用作关键字</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">| abstract | enum       | Int       | short        |</div><div class="line">| boolean  | export     | interface | static       |</div><div class="line">| byte     | extends    | long      | super        |</div><div class="line">| char     | final      | native    | synchronized |</div><div class="line">| class    | float      | package   | throws       |</div><div class="line">| const    | goto       | private   | transient    |</div><div class="line">| debugger | implements | protected | volatile     |</div><div class="line">| double   | import     | public    |              |</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">| abstract | enum       | Int       | short        |</div><div class="line">| boolean  | export     | interface | static       |</div><div class="line">| byte     | extends    | long      | super        |</div><div class="line">| char     | final      | native    | synchronized |</div><div class="line">| class    | float      | package   | throws       |</div><div class="line">| const    | goto       | private   | transient    |</div><div class="line">| debugger | implements | protected | volatile     |</div><div class="line">| double   | import     | public    |              |</div></pre></td></tr></table></figure>
 <p>严格模式下 保留字</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">| implements | package | public | interface |</div><div class="line">| private    | static  | let    | protected |</div><div class="line">| yield      |         |        |           |</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">| implements | package | public | interface |</div><div class="line">| private    | static  | let    | protected |</div><div class="line">| yield      |         |        |           |</div></pre></td></tr></table></figure>
 <p>6.变量</p>
 <ul>
 <li>变量是标识符的一种，用来存储数据</li>
@@ -329,25 +351,25 @@
 <ul>
 <li>声明变量</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="string">"hello world"</span>; <span class="comment">// a就是一个变量</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="string">"hello world"</span>; <span class="comment">// a就是一个变量</span></div></pre></td></tr></table></figure>
 <p><strong>如果局部变量中不加var 会变成全局变量 严格模式下会报错</strong></p>
 <ul>
 <li>如果声明一个变量，没有初始化那么默认值是: undefined(未定义);</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">var</span> a; <span class="comment">//声明了一个变量，这个变量名叫a，a存储的值为undefined</span></div><div class="line">alert(a);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"> <span class="keyword">var</span> a; <span class="comment">//声明了一个变量，这个变量名叫a，a存储的值为undefined</span></div><div class="line">alert(a);</div></pre></td></tr></table></figure>
 <ul>
 <li>赋值运算符”=”,不代表数学中等于 而是将 等号右侧的数据给了等号左侧</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> b=<span class="number">1</span>; <span class="comment">//声明了一个变量，命名为b并且初始化了一个数据是数字1</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> b=<span class="number">1</span>; <span class="comment">//声明了一个变量，命名为b并且初始化了一个数据是数字1</span></div></pre></td></tr></table></figure>
 <ul>
 <li>同时声明多个变量</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> b=<span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> c=<span class="number">3</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> b=<span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> c=<span class="number">3</span>;</div></pre></td></tr></table></figure>
 <p>等价于</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>;</div></pre></td></tr></table></figure>
 <p>7.代码测试: <code>console.log()</code></p>
 <p><code>console.log()</code>向控制台打印括号中的内容</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'hello,world'</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'hello,world'</span>);</div></pre></td></tr></table></figure>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
 <li><p>JavaScript 由三部分组成 ECMAScript、DOM和BOM组成</p>
 </li>
@@ -370,7 +392,7 @@
 
 </div>
 
-    <a data-url="DiomandCrack.github.io2017/10/23/1-初始JavaScript/" data-id="cj97s69w60000t87k7zo2q733" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="DiomandCrack.github.io2017/10/23/1-初始JavaScript/" data-id="cj98kodlw0006607kz48segh6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -491,7 +513,7 @@
                             <a href="../../24/2-数据类型/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1509039047376&amp;di=5eaabfff25c6166ad3a87b1356b237ad&amp;imgtype=0&amp;src=http%3A%2F%2Ftc.sinaimg.cn%2Fmaxwidth.2048%2Ftc.service.weibo.com%2Fp3_pstatp_com%2F82d1a99692bd348053ec11b00a6a1d28.jpg)" alt="2.数据类型" class="thumbnail-image"></span>
     
 </a>
 
@@ -510,7 +532,7 @@
                             <a href="" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1509039047376&amp;di=5eaabfff25c6166ad3a87b1356b237ad&amp;imgtype=0&amp;src=http%3A%2F%2Ftc.sinaimg.cn%2Fmaxwidth.2048%2Ftc.service.weibo.com%2Fp3_pstatp_com%2F82d1a99692bd348053ec11b00a6a1d28.jpg)" alt="1.初识JavaScript" class="thumbnail-image"></span>
     
 </a>
 

@@ -2256,3 +2256,9 @@ ol.toc {
 .highlight .code .strong {
   font-weight: bold;
 }
+#main {
+  float: right;
+}
+#profile {
+  float: right;
+}
