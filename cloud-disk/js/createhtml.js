@@ -1,4 +1,4 @@
-
+ï»¿
 const vari ={
 
     conRow:document.querySelector('.container .row'),
@@ -36,7 +36,7 @@ const vari ={
     searchFile: false
 };
 
-//Éú³ÉÎÄ¼ş¼Ğ½Úµã
+//ç”Ÿæˆæ–‡ä»¶å¤¹èŠ‚ç‚¹
 function createFileNode(fileData){
     let file = document.createElement('div');
     file.className = 'col-1';
@@ -57,18 +57,18 @@ function createFileNode(fileData){
 
 
     let fileItems = file.querySelectorAll('div');
-    //°ÑÊı¾İÖĞµÄid¸³Öµ¸øÎÄ¼ş¼ĞµÄÃ¿Ò»¸ö×é³É²¿·Ö
+    //æŠŠæ•°æ®ä¸­çš„idèµ‹å€¼ç»™æ–‡ä»¶å¤¹çš„æ¯ä¸€ä¸ªç»„æˆéƒ¨åˆ†
     for(let i=0; i<fileItems.length; i++){
 	fileItems[i].fileId = fileData.id;
     }
     file.fileId = fileData.id;
 
-    return file;//·µ»ØÕû¸öÎÄ¼ş¼Ğ½Úµã
+    return file;//è¿”å›æ•´ä¸ªæ–‡ä»¶å¤¹èŠ‚ç‚¹
 }
 
 
 
-//Éú³ÉÎÄ¼ş¼Ğ
+//ç”Ÿæˆæ–‡ä»¶å¤¹
 function createFileList(db,id,number,search){
     vari.conRow.innerHTML = '';
         const searchInput = vari.search.querySelector('.search-text');
@@ -83,7 +83,7 @@ function createFileList(db,id,number,search){
 	});
 	createBreadCrumb(dataBase,0);
 	const searchResult = document.createElement('li');
-	searchResult.innerHTML = `<i>&gt;</i>ËÑË÷µ½<strong>"${searchInput.value}"</strong>µÄ½á¹û`;
+	searchResult.innerHTML = `<i>&gt;</i>æœç´¢åˆ°<strong>"${searchInput.value}"</strong>çš„ç»“æœ`;
 	vari.breadCrumbNav.appendChild(searchResult);
 	vari.currentId = -1;
 	
@@ -92,7 +92,7 @@ function createFileList(db,id,number,search){
 	vari.childrenAll = children;
 	vari.fileNum = children.length;
     }
-    // ÅÅĞò
+    // æ’åº
     if(number===1){
 	sortByName(children,'name');
     }else if(number===2){
@@ -103,17 +103,17 @@ function createFileList(db,id,number,search){
     	vari.conRow.appendChild(createFileNode(item));
     });
 }
-//Éú³ÉÃæ°üĞ¼µ¼º½½Úµã
+//ç”Ÿæˆé¢åŒ…å±‘å¯¼èˆªèŠ‚ç‚¹
 function createBreadCrumbNode(fileData){
     const crumbList = document.createElement('li');
     const href = document.createElement('a');
     href.fileId = fileData.id;
-    href.innerHTML = `<i>&gt;</i> ${fileData.name}`;//Éú³ÉÃæ°üĞ¼µ¼º½html
+    href.innerHTML = `<i>&gt;</i> ${fileData.name}`;//ç”Ÿæˆé¢åŒ…å±‘å¯¼èˆªhtml
     href.href = 'javascript:;';
     crumbList.appendChild(href);
     return crumbList;
 }
-//Éú³ÉÃæ°üĞ¼µ¼º½
+//ç”Ÿæˆé¢åŒ…å±‘å¯¼èˆª
 function createBreadCrumb(db,id){
     vari.breadCrumbNav.innerHTML = '';
     var data = getAllParen(db,id);
@@ -126,7 +126,7 @@ function createBreadCrumb(db,id){
 
 openFile(dataBase,vari.currentId);
 
-//½«Éú³ÉÎÄ¼ş¼ĞºÍµ¼º½°ó¶¨ÔÚÒ»Æğ
+//å°†ç”Ÿæˆæ–‡ä»¶å¤¹å’Œå¯¼èˆªç»‘å®šåœ¨ä¸€èµ·
 function openFile(db,currentId){
     	        initFresh();
         vari.searchFile = false;
@@ -139,11 +139,11 @@ function openFile(db,currentId){
     showEmpty();
 }
 
-//µ¥Ñ¡
+//å•é€‰
 function showCheckNode(checkNode){
     const allFiles  = vari.conRow.children;
     let targetParent;
-    targetParent = checkNode.parentNode.parentNode;//µã»÷µÄÔªËØµÄ¸¸¼¶µÄ¸¸¼¶ ÄÜ¸Ä±äÎÄ¼ş¼Ğ¼¤»îÑùÊ½µÄÈİÆ÷
+    targetParent = checkNode.parentNode.parentNode;//ç‚¹å‡»çš„å…ƒç´ çš„çˆ¶çº§çš„çˆ¶çº§ èƒ½æ”¹å˜æ–‡ä»¶å¤¹æ¿€æ´»æ ·å¼çš„å®¹å™¨
     const length = [...allFiles].length;
     const {fileId} = targetParent; //targetParent.fileId = fileId;
     const checked = targetParent.classList.toggle('active'); // 
@@ -162,7 +162,7 @@ function showCheckNode(checkNode){
     checkAll.classList.toggle('active',checkedBuffer.length===length && length);
 };
 
-// È«Ñ¡°´Å¥½Úµã
+// å…¨é€‰æŒ‰é’®èŠ‚ç‚¹
 function checkAllNode(single){
     const {childrenAll,checkAll,checkedBuffer} = vari;
     const allFiles = vari.conRow.children;
@@ -190,7 +190,7 @@ function checkAllNode(single){
     }
 }
 
-//ÏÔÊ¾¸±¿ØÖÆ°´Å¥
+//æ˜¾ç¤ºå‰¯æ§åˆ¶æŒ‰é’®
 function showSubNav(){
     const length = vari.checkedBuffer.length;
     if(length>=1){
@@ -204,18 +204,18 @@ function showSubNav(){
     vari.btnRename.classList.toggle('disable',length !==1);
 }
 
-//Ìí¼ÓÊÂ¼ş
+//æ·»åŠ äº‹ä»¶
 vari.container.addEventListener('click',function(e){
     const target = e.target;
     if(target.classList.contains('main-file') || target.classList.contains('grey-file') || target.classList.contains('file-title')){
 	openFile(dataBase,vari.currentId = target.fileId);
     }
     // console.log(target);
-    if(target.classList.contains('file-true')){ //¼àÌıµ¥Ñ¡°´Å¥
+    if(target.classList.contains('file-true')){ //ç›‘å¬å•é€‰æŒ‰é’®
 	showCheckNode(target);
 	showSubNav();
     }
-    if(target.parentNode.classList.contains('check-all')){//¼àÌıÈ«Ñ¡°´Å¥
+    if(target.parentNode.classList.contains('check-all')){//ç›‘å¬å…¨é€‰æŒ‰é’®
 	checkAllNode(target);
     }
 
@@ -245,13 +245,13 @@ function permitRename(){
 	setFileTitle(checkedBuffer,true);
     }
 }
-//¼àÌıÉ¾³ı°´Å¥
+//ç›‘å¬åˆ é™¤æŒ‰é’®
 vari.deleteBtn.addEventListener('click',function(e){
     let target = e.target;
     vari.body.insertBefore(createPrompt('delete-box'),vari.alertBox);
     deleteFile();
 });
-//¼àÌıĞÂ½¨°´Å¥
+//ç›‘å¬æ–°å»ºæŒ‰é’®
 vari.createNewFile.addEventListener('click',function(e){
     vari.rename = true;
     createFolder();
@@ -261,7 +261,7 @@ vari.createNewFile.addEventListener('click',function(e){
 });
 
 
-//ÖØÃüÃû
+//é‡å‘½å
 
 function setFileTitle(checkedBuffer,boolean){
     const checkedEle = getSelectElement(checkedBuffer)[0];
@@ -288,13 +288,13 @@ function setFileTitle(checkedBuffer,boolean){
     nameInput.focus();
     nameInput.select();
     shade.style.transform = 'scale(1)';
-    //¼àÌıÖØÃüÃû¹æÔòÊÂ¼şº¯Êı
+    //ç›‘å¬é‡å‘½åè§„åˆ™äº‹ä»¶å‡½æ•°
     function renameRule(){
 	shade.style.transform = '';
 	let newName = nameInput.value.trim();	
 	if(!newName){
 	    nameInput.focus();
-	    return alertMessage('ÎÄ¼ş(¼Ğ)Ãû³Æ²»ÄÜÎª¿Õ£¬ÇëÊäÈëÎÄ¼şÃû³Æ','error');
+	    return alertMessage('æ–‡ä»¶(å¤¹)åç§°ä¸èƒ½ä¸ºç©ºï¼Œè¯·è¾“å…¥æ–‡ä»¶åç§°','error');
 	}
 
 	if(newName === initName && boolean){   return switchName(nameText,nameChange,'show');}
@@ -313,7 +313,7 @@ function setFileTitle(checkedBuffer,boolean){
 
 	switchName(nameText,nameChange,'show');
     }
-    //¹Ø±Õ°´Å¥¹æÔòº¯Êı
+    //å…³é—­æŒ‰é’®è§„åˆ™å‡½æ•°
     function toggleWrong(){
 	shade.style.transform = '';
 	if(!boolean){
@@ -344,7 +344,7 @@ function setFileTitle(checkedBuffer,boolean){
   };
 }
 
-//ÖØÃüÃû¹²ÓÃº¯Êı
+//é‡å‘½åå…±ç”¨å‡½æ•°
 function createNewFolder(boolean){
     if(!boolean){
 	const newData =vari.conRow.children[0];
@@ -358,17 +358,17 @@ function createNewFolder(boolean){
 	vari.fileNum = vari.fileNum+1;
     }
     if(boolean){
-	alertMessage('ĞŞ¸ÄÃû×Ö³É¹¦','success');
+	alertMessage('ä¿®æ”¹åå­—æˆåŠŸ','success');
     }else{
-	alertMessage('´´½¨ÎÄ¼ş³É¹¦','success');
+	alertMessage('åˆ›å»ºæ–‡ä»¶æˆåŠŸ','success');
     }
 }
-//inputºÍtitleÇĞ»»ÏÔÊ¾Òş²Øº¯Êı
+//inputå’Œtitleåˆ‡æ¢æ˜¾ç¤ºéšè—å‡½æ•°
 function switchName(show,hidden,classType){
     show.classList.add(classType);
     hidden.classList.remove(classType);
 }
-//½«Ñ¡ÖĞµÄÔªËØ»º´æ×ª³ÉÊı×é
+//å°†é€‰ä¸­çš„å…ƒç´ ç¼“å­˜è½¬æˆæ•°ç»„
 function getSelectElement(checkedBuffer){
 
     let data = [];
@@ -384,7 +384,7 @@ function getSelectElement(checkedBuffer){
     return data;
 }
 
-//ÌáÊ¾¿ò
+//æç¤ºæ¡†
 function alertMessage(text,type){
     clearTimeout(alertMessage.timer);
     vari.alertBox.innerHTML= text;
@@ -410,29 +410,29 @@ function alertMessage(text,type){
 	}
     });
 }
-//É¾³ı°´Å¥
+//åˆ é™¤æŒ‰é’®
 
 function createPrompt(type){
     const {prompt} =vari; 
     prompt.className = 'prompt show';
     prompt.innerHTML =` 
 	 <div class="prompt-box ${type}">
-     <h4>È·ÈÏÉ¾³ı</h4>
+     <h4>ç¡®è®¤åˆ é™¤</h4>
      <div class="main-prompt">
        <div>
-		 È·ÈÏÒª°ÑËùÑ¡ÎÄ¼ş·ÅÈë»ØÊÕÕ¾Âğ£¿
+		 ç¡®è®¤è¦æŠŠæ‰€é€‰æ–‡ä»¶æ”¾å…¥å›æ”¶ç«™å—ï¼Ÿ
        </div>
        <div>
-	 É¾³ıÎÄ¼ş¿ÉÔÚ10ÌìÄÚÍ¨¹ı»ØÊÕÕ¾»¹Ô­
+	 åˆ é™¤æ–‡ä»¶å¯åœ¨10å¤©å†…é€šè¿‡å›æ”¶ç«™è¿˜åŸ
        </div>
        <div class="btn-confirm">
-	 <div class="btn-submit btn">È·¶¨</div>
-	 <div class="btn-cancel btn">È¡Ïû</div>
+	 <div class="btn-submit btn">ç¡®å®š</div>
+	 <div class="btn-cancel btn">å–æ¶ˆ</div>
        </div>
      </div>
      <div class="vip-ad">
-       <span><i></i>¿ªÍ¨³¬¼¶»áÔ±Á¢Ïí»ØÊÕÕ¾30Ìì±£´æÌØÈ¨</span>
-       <div class="vip-sign-btn"><a href="https://pan.baidu.com/buy/center?tag=8&form=deletefile">Á¢¼´¿ªÍ¨</a></div>
+       <span><i></i>å¼€é€šè¶…çº§ä¼šå‘˜ç«‹äº«å›æ”¶ç«™30å¤©ä¿å­˜ç‰¹æƒ</span>
+       <div class="vip-sign-btn"><a href="https://pan.baidu.com/buy/center?tag=8&form=deletefile">ç«‹å³å¼€é€š</a></div>
      </div>
    </div>
    `;
@@ -449,7 +449,7 @@ function deleteFile(newOn){
     // 	prompt.children.classList.remove('delete-box');
 
     // }
-    if(newOn){//Èç¹ûÊÇĞÂ½¨ÎÄ¼ş
+    if(newOn){//å¦‚æœæ˜¯æ–°å»ºæ–‡ä»¶
 	const data= getSelectElement(vari.checkedBuffer);
 	console.log(data);
 	data.forEach(function(item){
@@ -485,11 +485,11 @@ function deleteFile(newOn){
     };
 }
 
-//ĞÂ½¨ÎÄ¼ş¼Ğ
+//æ–°å»ºæ–‡ä»¶å¤¹
 function createFolder(){
     let newFolder = {
 	id: Date.now(),
-	name: 'ĞÂ½¨ÎÄ¼ş¼Ğ'};
+	name: 'æ–°å»ºæ–‡ä»¶å¤¹'};
     const newFile = createFileNode(newFolder);
 
     const newData =vari.conRow.children[0];
@@ -502,11 +502,11 @@ function createFolder(){
     deleteFile(true);
     setFileTitle(newFile);
 }
-//Èç¹ûÏÔÊ¾ÎÄ¼şÎª¿Õ
+//å¦‚æœæ˜¾ç¤ºæ–‡ä»¶ä¸ºç©º
 function showEmpty(){
     vari.emptyInfo.classList.toggle('show', !vari.conRow.children.length);
 }
-//´Óµ±Ç°ÈİÆ÷ÕÒµ½ËùÓĞ×Ó¼¶ °üÀ¨×Ó¼¶µÄ×Ó¼¶ // function findSonsTree(db,id){
+//ä»å½“å‰å®¹å™¨æ‰¾åˆ°æ‰€æœ‰å­çº§ åŒ…æ‹¬å­çº§çš„å­çº§ // function findSonsTree(db,id){
 //     let arr = [];
 //     for(let key in db){
 // 	const current = db[key];
@@ -568,10 +568,10 @@ function createFileMoveDialog(treeListHtml,text){
       </div>
       <div class="btn-group">
 	<div class="create-folder btn-small">
-	  <i></i><span>ĞÂ½¨ÎÄ¼ş¼Ğ</span>
+	  <i></i><span>æ–°å»ºæ–‡ä»¶å¤¹</span>
       </div>
-      <div class="submit btn-small">È·¶¨</div>
-      <div class="cancel btn-small">È¡Ïû</div>
+      <div class="submit btn-small">ç¡®å®š</div>
+      <div class="cancel btn-small">å–æ¶ˆ</div>
     </div>`;
     return prompt;
 }
@@ -586,7 +586,7 @@ function createFileMoveDialog(treeListHtml,text){
 //    });
 
 //     if(intoSelf){
-//     return -1; // ÒÆ¶¯µ½×Ô¼ºËùÔÚµÄÄ¿Â¼
+//     return -1; // ç§»åŠ¨åˆ°è‡ªå·±æ‰€åœ¨çš„ç›®å½•
 //     }
 
 //    const intoParent = data.every(function(item){
@@ -594,7 +594,7 @@ function createFileMoveDialog(treeListHtml,text){
 //    });
 
 //     if(intoParent){
-//     return -2;   // ÒÆ¶¯µ½×Ô¼ºµÄ×Ó¼¯
+//     return -2;   // ç§»åŠ¨åˆ°è‡ªå·±çš„å­é›†
 //     }
 
 //     const nameRepeat = data.every(function(item){
@@ -602,7 +602,7 @@ function createFileMoveDialog(treeListHtml,text){
 //     });
 
 //     if(!nameRepeat){
-//     return -3; // Ãû×Ö³åÍ»
+//     return -3; // åå­—å†²çª
 //     }
 
 //     return 1;  
@@ -629,7 +629,7 @@ function moveToTargetFile(e){
     const len = checkedBuffer.length;
 
     if(!len){
-	return alertMessage('ÉĞÎ´Ñ¡ÖĞÎÄ¼ş', 'error');
+	return alertMessage('å°šæœªé€‰ä¸­æ–‡ä»¶', 'error');
     }
 
     function sureFn(){
@@ -643,7 +643,7 @@ function moveToTargetFile(e){
 
 	if(intoSelf){
 	    canMove = false;
-	    return alertMessage('ÒÑ¾­ÔÚµ±Ç°Ä¿Â¼', 'error'); // ÒÆ¶¯µ½×Ô¼ºËùÔÚµÄÄ¿Â¼
+	    return alertMessage('å·²ç»åœ¨å½“å‰ç›®å½•', 'error'); // ç§»åŠ¨åˆ°è‡ªå·±æ‰€åœ¨çš„ç›®å½•
 	}
 
 	let parentArr = [];
@@ -657,7 +657,7 @@ function moveToTargetFile(e){
 
 	if(intoParent){
 	    canMove = false;
-	    return alertMessage('²»ÄÜÒÆ¶¯µ½×Ó¼¶', 'error'); // ÒÆ¶¯µ½×Ô¼ºµÄ×Ó¼¶
+	    return alertMessage('ä¸èƒ½ç§»åŠ¨åˆ°å­çº§', 'error'); // ç§»åŠ¨åˆ°è‡ªå·±çš„å­çº§
 	}
 
 	const nameRepeat = data.every(function(item){
@@ -666,8 +666,8 @@ function moveToTargetFile(e){
 	});
 	if(!nameRepeat){
 	    canMove = false;
-	    return  alertMessage('´æÔÚÍ¬ÃûÎÄ¼ş', 'error');
-	    // Ãû×Ö³åÍ»
+	    return  alertMessage('å­˜åœ¨åŒåæ–‡ä»¶', 'error');
+	    // åå­—å†²çª
 	}
 	if(canMove){
 	    data.forEach(function(item, i) {
@@ -680,14 +680,14 @@ function moveToTargetFile(e){
 	}
     }
     function cancelFn(){
-	alertMessage('È¡ÏûÒÆ¶¯ÎÄ¼ş', 'normal');
+	alertMessage('å–æ¶ˆç§»åŠ¨æ–‡ä»¶', 'normal');
     }
 }
 
 function setMoveFileDialog(sureFn, cancelFn){
     const {currentId} = vari;  
     const fileMoveWrap = document.querySelector('.file-move');
-    const treeListNode = createFileMoveDialog(createTreeList(dataBase, 0, vari.currentId),'ÒÆ¶¯µ½');
+    const treeListNode = createFileMoveDialog(createTreeList(dataBase, 0, vari.currentId),'ç§»åŠ¨åˆ°');
     vari.body.insertBefore(treeListNode,vari.alertBox);  dragEle({
 	downEle: vari.prompt.querySelector('.prompt h4'),
 	moveEle: vari.prompt.querySelector('.prompt-box')
@@ -760,7 +760,7 @@ function initFresh(){
     vari.switchSearch = false;
 }
 
-//Êó±ê»­¿ò
+//é¼ æ ‡ç”»æ¡†
 //     vari.container.addEventListener('mousedown',function(e){
 mouseDraw(true);
 //     });
@@ -900,7 +900,7 @@ function mouseDraw(ban){
 }
 
 
-//ÓÒ¼ü²Ëµ¥
+//å³é”®èœå•
 
 function menuOnFile(onFile){
 	const menu = vari.menuOnFile;
@@ -949,7 +949,7 @@ function menuOnFile(onFile){
     });
 }
 
-//ÓÒ¼ü²Ëµ¥µÄ¹¦ÄÜ
+//å³é”®èœå•çš„åŠŸèƒ½
 function contextMenuFunction(onFile){
 	let menu;
     if(onFile){
@@ -1022,7 +1022,7 @@ function contextMenuFunction(onFile){
 	};
     }
 }
-//ÔÚ¿Õ°×´¦µÄ²Ëµ¥
+//åœ¨ç©ºç™½å¤„çš„èœå•
 function menuOnWhite(){
     const menu = vari.menuOnWhite;
     const sort = menu.querySelector('.sub-list');
@@ -1097,11 +1097,11 @@ vari.changeStyle.onclick = function(e){
     vari.switchChange = !vari.switchChange;
 };
 
-//ÅÅĞò·½Ê½
+//æ’åºæ–¹å¼
 
-//1 °´Ãû³ÆÅÅĞò
-//2 ÎÄ¼ş´óĞ¡
-//3 ÈÕÆÚ
+//1 æŒ‰åç§°æ’åº
+//2 æ–‡ä»¶å¤§å°
+//3 æ—¥æœŸ
 // function sortFunction(prop){
 //     return function(item1,item2){
 // 	const value1 =  item1[prop];
@@ -1192,7 +1192,7 @@ function sortList(data){
 }
 sortList();
 
-//ËÑË÷ÎÄ¼ş
+//æœç´¢æ–‡ä»¶
 searchFile();
 function searchFile(){
     const searchInput = vari.search.querySelector('.search-text');
@@ -1203,7 +1203,7 @@ function searchFile(){
 	searchInput.focus();
     };
     
-    searchInput.value = 'Òô';
+    searchInput.value = 'éŸ³';
     searchBtn.onclick = function(e){
 		        initFresh();
 	e.stopPropagation();
@@ -1216,7 +1216,7 @@ function searchFile(){
 	showEmpty();
 	    openFile(dataBase,0);
 
-	 return alertMessage('ÎÄ¼şÃ»ÓĞËÑË÷µ½','error');
+	 return alertMessage('æ–‡ä»¶æ²¡æœ‰æœç´¢åˆ°','error');
 	}
     };
 
