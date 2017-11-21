@@ -1,4 +1,4 @@
-//------------------Êý¾Ý------------------------
+//------------------ï¿½ï¿½ï¿½ï¿½------------------------
 data = [
     {id:0,name:'github',matchId:1},
     {id:1,name:'github',matchId:1},
@@ -21,7 +21,7 @@ data = [
     {id:18,name:'youtube-play',matchId:10},
     {id:19,name:'youtube-play',matchId:10}
 ];
-//-------------------------È«¾Ö±äÁ¿----------------------------------
+//-------------------------È«ï¿½Ö±ï¿½ï¿½ï¿½----------------------------------
 global = {
     listCon: document.querySelector('.list-con'),
     prompt: document.querySelector('.prompt'),
@@ -39,7 +39,7 @@ global = {
     starsNum: 0
 };
 
-//-----------------------------Éú³É½Úµã--------------------------------------
+//-----------------------------ï¿½ï¿½ï¿½É½Úµï¿½--------------------------------------
 function createLiNode(dataItem){
     const item = document.createElement('li');
     item.matchId = dataItem.matchId;
@@ -60,7 +60,7 @@ function createLiNode(dataItem){
 
     return item;
 }
-//---------------------------Éú³É½á¹¹------------------------------------------------------
+//---------------------------ï¿½ï¿½ï¿½É½á¹¹------------------------------------------------------
 function createCards(data){
     global.listCon.innerHTML = '';
     const arr = data.slice().sort(function(){
@@ -73,7 +73,7 @@ function createCards(data){
 
 // createCards(data);
 
-//--------------------------µã»÷·­×ªº¯Êý--------------------------------------------------------------
+//--------------------------ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½--------------------------------------------------------------
 function rotate(){
     const listCon = document.querySelector('.list-con');
     const items = listCon.querySelectorAll('li');
@@ -84,7 +84,7 @@ function rotate(){
 };
 
 // rotate();
-//---------------------------ÅÐ¶ÏÊÇ·ñÆ¥ÅäÕýÈ·----------------------------------------------------
+//---------------------------ï¿½Ð¶ï¿½ï¿½Ç·ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½È·----------------------------------------------------
 
 function decide(item){
     const flipper = item.querySelector('.flipper');
@@ -112,7 +112,7 @@ function decide(item){
     };
 }
 
-//------------------------ÌáÊ¾ÊÇ·ñÆ¥ÅäÕýÈ·-------------------------------
+//------------------------ï¿½ï¿½Ê¾ï¿½Ç·ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½È·-------------------------------
 function judge(arr,onOff){
     global.judgeArr.forEach(function(item){
 	const flipper = item.querySelector('.flipper');
@@ -128,7 +128,7 @@ function judge(arr,onOff){
 	}
     });
 }
-//--------------------------¼ÆÊ±Æ÷------------------------------------------
+//--------------------------ï¿½ï¿½Ê±ï¿½ï¿½------------------------------------------
 function timing(){
     global.time.h = parseInt(global.time.t/60/60);
     global.time.m = parseInt(global.time.t/60%60);
@@ -151,18 +151,12 @@ function add0(num){
 }
 // timing();
 
-//--------------------------ÐÇÐÇ-------------------------------
+//--------------------------ï¿½ï¿½ï¿½ï¿½-------------------------------
 function stars(){
     const  star = document.querySelectorAll('.fa-star');
     const starsArr = [...star];
     let arr = starsArr.slice();
-    if(global.wrongStep <= 5){
-	arr.length =0;
-	global.starsNum = 3;
-    }else if(global.wrongStep > 5 && global.wrongStep<= 10){
-	arr = arr.slice(2,3);
-	global.starsNum = 2;
-    } else if(global.wrongStep <= 15&&global.wrongStep>10){
+    if(global.wrongStep <= 5){="" arr.length="0;" global.starsnum="3;" }else="" if(global.wrongstep=""> 5 && global.wrongStep<= 10){="" arr="arr.slice(2,3);" global.starsnum="2;" }="" else="" if(global.wrongstep="" <="15&&global.wrongStep">10){
 	arr.shift();
 	global.starsNum = 1;
     }else{
@@ -170,7 +164,7 @@ function stars(){
     }
     arr.forEach(item=>item.className='fa fa-star-o');
 }
-//----------------------------ÌáÊ¾¿ò---------------------------------
+//----------------------------ï¿½ï¿½Ê¾ï¿½ï¿½---------------------------------
 function prompt(){
     // global.prompt.classList.toggle('show',correct);
     const listCon = document.querySelector('.list-con');
@@ -190,7 +184,7 @@ function prompt(){
     }
 
 }
-//----------------------------³õÊ¼»¯--------------------------------
+//----------------------------ï¿½ï¿½Ê¼ï¿½ï¿½--------------------------------
 function gameInit(data){
     createCards(data);
     rotate();
@@ -215,7 +209,7 @@ function gameInit(data){
     });
 }
 
-//-------------------------------ÔÙÀ´Ò»´Î---------------------------------
+//-------------------------------ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½---------------------------------
 function again(correct,data){
     const btnAgain = document.querySelector('.once-more');
 
@@ -228,3 +222,4 @@ function again(correct,data){
 
 
 gameInit(data);
+</=></=>
