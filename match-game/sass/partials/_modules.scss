@@ -58,7 +58,6 @@ h1 {
         width: 100%;
         height: 100%;
         li {
-            width: 20%;
             display: flex;
             align-items: center;
         }
@@ -91,7 +90,7 @@ h1 {
         }
         .front {
             //from css3 pattern gallery
-            // background: #00a8eb;
+            background: #00a8eb;
             background-color: #00a8eb;
             background-image: linear-gradient(transparent 50%, rgba(255, 255, 255, .7) 50%);
             background-size: 41% 41%;
