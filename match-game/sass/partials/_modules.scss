@@ -103,13 +103,6 @@ h1 {
             position: absolute;
             top: 0px;
             left: 0px;
-            backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-            /* Chrome 和 Safari */
-            -moz-backface-visibility: hidden;
-            /* Firefox */
-            -ms-backface-visibility: hidden;
-            /* Internet Explorer */
         }
         // .card:hover .flipper, .card:hover .flipper {
         //     transform: rotateY(180deg);
