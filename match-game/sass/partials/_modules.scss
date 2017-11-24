@@ -103,6 +103,7 @@ h1 {
             position: absolute;
             top: 0px;
             left: 0px;
+            backface-visibility: hidden;
         }
         // .card:hover .flipper, .card:hover .flipper {
         //     transform: rotateY(180deg);
