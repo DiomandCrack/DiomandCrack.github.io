@@ -422,10 +422,10 @@ h1 {
 }
 /* line 110, ../sass/partials/_modules.scss */
 .container .list-con .front {
-  /*             background-image: linear-gradient(transparent 50%, rgba(255, 255, 255, .7) 50%); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.7) 50%);
   background-color: #00a8eb;
-  /*             background-size: 41% 41%; */
-  z-index: 999;
+  background-size: 41% 41%;
+  z-index: 1;
 }
 
 @keyframes correct {
